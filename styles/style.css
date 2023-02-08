@@ -1,0 +1,137 @@
+*{
+	margin: 0;
+	position: 0;
+	font-family: "Comic Sans MS";
+	font-size: 2vmax;
+}
+h1{
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+body{
+	outline: border;
+}
+.main{
+	background: linear-gradient(#6AD6FD, white);
+	height:  100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 1px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.container{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+.register{
+	width: 100%;
+	margin-top: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.reg-conteiner{
+	display: flex;
+	flex-direction: column;
+}
+.reg-form{
+	display: flex;
+	flex-direction: column;
+}
+.field{
+	margin: 10px;
+	border-radius: 5px;
+
+}
+.btn-submit{
+	margin: 10px;
+	background-color: lime ;
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	align-items: center;
+	box-sizing: border-box;
+	box-shadow: 0px 3px 10px DarkCyan;
+}
+.btn-a{
+    display: inline-block; 
+    background: #8C959D; 
+    color: #fff; 
+    padding: 10px 7px; 
+    text-decoration: none; 
+    border-radius: 3px;
+}
+.game{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.tips{
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+}
+.gues{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.gues-list{
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.win{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	background-color: Chartreuse;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+.lost{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: FireBrick;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+#win{
+	color: Chartreuse;
+	text-shadow: -0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;
+}
