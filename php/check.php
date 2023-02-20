@@ -1,4 +1,5 @@
 <?php
+	$config = require_once 'config.php';
 	$login = filter_var(trim($_POST['login']),FILTER_SANITIZE_STRING);
 	$pass = filter_var(trim($_POST['password']),FILTER_SANITIZE_STRING);
 	if(mb_strlen($login) < 4) {
@@ -10,7 +11,7 @@
 		header('Location: /');
 		exit();
 	}
-	$mysql = new mysqli('localhost', 'root', '', 'game-bd');
+	$mysql = new mysqli($config['host'], $config['user'], $config['db_password'], $config['db_name']);
 
 	$result = $mysql->query("SELECT * FROM `users` WHERE `login` = '$login'");
 	$user = $result->num_rows;
@@ -20,7 +21,7 @@
 		exit();
 	}
 
-	$pass = md5($pass."y13ugii12");
+	$pass = md5($pass.$config->hash));
 
 	
 	$mysql->query("INSERT INTO `users` (`login`, `password`) VALUES('$login', '$pass')");

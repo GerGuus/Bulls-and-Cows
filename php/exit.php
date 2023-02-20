@@ -1,5 +1,5 @@
 <?php 
-	setcookie('login', $user['login'], time() - 3600, "/");
-	setcookie('id', $user['id'], time() - 3600, "/");
+	require_once 'config.php';
+	$_SESSION = [];
 	header('Location: /');
 ?>
