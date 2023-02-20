@@ -1,6 +1,21 @@
 <?php
 
+
 session_start();
+require dirname(__DIR__) . '/vendor/autoload.php';
+use Dotenv\Dotenv;
+
+// use Test;
+$test = new \Test\TestClass();
+$test->printfoo();
+exit;
+
+$dotenv = Dotenv::createImmutable(dirname(__DIR__));
+$dotenv->load();
+
+
+
+
 return [
 	'host' => 'localhost',
 	'user' => 'root',
